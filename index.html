@@ -2,94 +2,200 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Atividade 1</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>YU Coffee</title>
   </head>
   <body>
-    <h2 align="center">Front-End</h2>
-    <p>
-      O desenvolvimento de front-end é uma disciplina crucial para criar
-      <b>experiências de usuário</b> envolventes e funcionais em sites e
-      aplicativos. Além das linguagens essenciais, os desenvolvedores de
-      front-end também lidam com <i>frameworks</i> e <i>bibliotecas</i> que
-      simplificam o processo de desenvolvimento e melhoram a eficiência. A
-      rápida evolução da web e a diversidade de dispositivos demandam que esses
-      profissionais estejam <b>atualizados</b> com as últimas tecnologias e
-      pratiquem boas técnicas de <b>acessibilidade</b> para garantir uma
-      experiência inclusiva para todos os usuários.<br />
-      O primeiro código que um desenvolvedor front-end aprende, é o famoso
-      "Hello World!"
-    </p>
-    <code> console.log("hello world!"); </code>
-    <p>
-      O papel do desenvolvedor de front-end vai além da codificação, envolvendo
-      uma compreensão profunda dos princípios de design, usabilidade e a
-      capacidade de colaborar eficientemente com equipes multidisciplinares.
-      Esses profissionais desempenham um papel crucial na
-      <b>criação da interface</b>
-      que os usuários interagem, influenciando diretamente na percepção e
-      satisfação do usuário em relação a uma aplicação ou site. Para possuir uma
-      visão mais holística sobre toda parte visual de um site ou aplicação, é
-      interessante que este(a) programador(a) possua alguns conhecimentos
-      relativos a design gráfico e UX (ou experiência do usuário).
-    </p>
-    <p>
-      Aqui está algumas ferramentas utilizadas no desenvolvimento front-end:
-    </p>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#menu">Cardápio</a>
+          </li>
+          <li>
+            <a href="#register">Cadastro</a>
+          </li>
+          <li>
+            <a href="#stores">Nossas lojas</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="audio">
+        <audio src="./assets/audios/lofi.mp3" autoplay loop controls></audio>
+        <p class="credits">
+          Vídeo obtido através do site
+          <a
+            href="https://pixabay.com/pt/music/batidas-lofi-hip-hop-11489/"
+            target="_blank"
+            >Pixabay</a
+          >.
+        </p>
+      </div>
+    </header>
+    <div class="introContainer">
+      <div class="intro">
+        <img src="./assets/images/light-logo.png" alt="Logo" class="logo" />
+        <p>
+          Bem-vindo à nossa cafeteria, onde cada xícara conta uma história de
+          sabor e paixão pelo café. Aqui, mergulhe em um ambiente acolhedor,
+          onde aromas ricos e sabores excepcionais se entrelaçam para criar uma
+          experiência única. Da primeira gota ao último gole, nossa missão é
+          oferecer a você momentos de puro prazer, com grãos cuidadosamente
+          selecionados e uma atmosfera que convida à contemplação. Descubra o
+          verdadeiro significado do café artesanal enquanto saboreia nossas
+          deliciosas criações, preparadas com amor e dedicação. Sinta-se em
+          casa, celebre o aroma da vida em cada xícara conosco.
+        </p>
+      </div>
+    </div>
+    <section id="menu">
+      <div class="menuContainer">
+        <h2>Cardápio</h2>
+        <ul>
+          <li>
+            <img
+              src="./assets/images/coffee.jpg"
+              alt="Xícara de afé"
+              class="menuImg"
+            />
+            <p>
+              Temos uma variedade de cafés que atendem todos os tipos de
+              consumidores, até aqueles mais exigêntes.
+            </p>
+            <a href="./pages/coffee/coffee.html" class="menuButton">Cafés</a>
+          </li>
+          <li>
+            <img
+              src="./assets/images/sandwich.jpg"
+              alt="Sanduiche"
+              class="menuImg"
+            />
+            <p>
+              Confira nossa variaridade de lanches que podem acompanhar o seu
+              café e fazer a sua experiência ainda mais extraordinária.
+            </p>
+            <a href="./pages/snacks/snacks.html" class="menuButton">Lanches</a>
+          </li>
+          <li>
+            <img
+              src="./assets/images/coffee-grains.jpg"
+              alt="Grãos de café"
+              class="menuImg"
+            />
+            <p>
+              Possuimos diversos tipos de cafés que você pode levar para fazer
+              no conforto de sua casa e ainda utensílios que farão com que você
+              se sinta em uma de nossas nojas.
+            </p>
+            <a href="./pages/delivery.html" class="menuButton">Delivery</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="register">
+      <div class="registerContainer">
+        <h2>Cadastro</h2>
+        <p>
+          Faça seu cadastro para receber em primeira mão nossas promoções e
+          acumule pontos para usar em suas compras.
+        </p>
+        <p>Aqui será incluido o formulário da atividade 3</p>
+      </div>
+    </section>
+    <section id="stores">
+      <h2>Nossas lojas</h2>
+      <div class="flex">
+        <div>
+          <video src="./assets/videos/video.mp4" autoplay loop></video>
+          <p class="credits">
+            Vídeo obtido através do site
+            <a
+              href="https://pixabay.com/pt/videos/caf%C3%A9-porta-filtro-creme-quebrar-139158/"
+              target="_blank"
+              >Pixabay</a
+            >.
+          </p>
+        </div>
 
-    <ul>
-      <li>React</li>
-      <li>Bootstrap</li>
-      <li>Sass</li>
-      <li>Javascript</li>
-      <li>Jest</li>
-      <li>Angular</li>
-    </ul>
-    <hr />
-    <h2 align="center">Back-End</h2>
-    <p>
-      O desenvolvimento de <b>back-end</b> é fundamental para a criação e
-      manutenção de sistemas web e aplicativos, pois lida com a parte estrutural
-      e funcional que permite a interação do usuário com o sistema. Além de
-      <b>processar as solicitações</b> do front-end, o back-end é responsável
-      por gerenciar a segurança, a integridade dos dados e as operações de
-      negócios complexas. Os desenvolvedores de back-end trabalham em estreita
-      colaboração com os profissionais de front-end e os arquitetos de banco de
-      dados para garantir uma experiência de usuário suave e eficiente. Aqui
-      está algumas habilidades necessárias em um desenvolvedor back-end:
-    </p>
-
-    <ol>
-      <li>Proficiência em pelo menos uma linguagem de programação</li>
-      <li>
-        Habilidades em design de banco de dados, consultas SQL e experiência com
-        sistemas de gerenciamento de bancos de dados
-      </li>
-      <li>Familiaridade com frameworks back-end</li>
-      <li>Conhecimento sólido em práticas de segurança</li>
-      <li>Proficiência em sistemas de controle de versão</li>
-      <li>Compreender conceitos de arquitetura de software</li>
-    </ol>
-    <p>
-      No âmbito das ferramentas de desenvolvimento de back-end, é importante
-      destacar o uso de sistemas de controle de versão, como o <i>Git</i>, que
-      permite o rastreamento e gerenciamento eficiente do código-fonte ao longo
-      do desenvolvimento. Outra ferramenta relevante é o <i>Docker</i>, que
-      facilita a criação, implantação e execução de aplicativos em contêineres,
-      garantindo consistência e portabilidade entre diferentes ambientes. Essas
-      ferramentas, juntamente com as mencionadas anteriormente, desempenham um
-      papel crucial na construção e manutenção bem-sucedida do back-end,
-      garantindo a robustez e escalabilidade das aplicações. Algumas ferramentas
-      amplamente utilizadas no desenvolvimento de back-end incluem:
-    </p>
-
-    <ul>
-      <li>Node.js</li>
-      <li>Express.js</li>
-      <li>Pyton</li>
-      <li>Spring Boot</li>
-      <li>MongoDB</li>
-      <li>MySQL</li>
-    </ul>
+        <table>
+          <tr>
+            <th>Localidade</th>
+            <th>Endereço</th>
+            <th>Mapa</th>
+          </tr>
+          <tr>
+            <td>São Paulo</td>
+            <td>Avenida Paulista - Edifício Central - Lojas 11 e 12</td>
+            <td>
+              <a
+                href="https://maps.app.goo.gl/JPityfhHJoqhQupx6"
+                target="_blank"
+                >Visualizar</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>Brasília</td>
+            <td>Asa Sul - Edifício Varig bloco B lojas 1 e 2</td>
+            <td>
+              <a
+                href="https://maps.app.goo.gl/pwP5YVXrG1c6yuNU7"
+                target="_blank"
+                >Visualizar</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>Brasília</td>
+            <td>Aeroporto Internacional de Brasília - lojas 30 e 31</td>
+            <td>
+              <a
+                href="https://maps.app.goo.gl/2PsQniJ2HoHLfa7z5"
+                target="_blank"
+                >Visualizar</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>Rio de Janeiro</td>
+            <td>Ipanema - Rua Vinivius de Moraes</td>
+            <td>
+              <a
+                href="https://maps.app.goo.gl/QqHkQcPS1tFtwbtk8"
+                target="_blank"
+                >Visualizar</a
+              >
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <footer>
+      <div class="socialMediaContainer">
+        <img
+          src="./assets/images/instagram.png"
+          alt="Logo instagram"
+          class="socialMedia"
+        />
+        <img
+          src="./assets/images/youtube.png"
+          alt="Logo youtube"
+          class="socialMedia"
+        />
+        <img
+          src="./assets/images/twitter.png"
+          alt="Logo twitter"
+          class="socialMedia"
+        />
+      </div>
+      <p>&copy; 2024 YU Coffee. Todos os direitos reservados.</p>
+    </footer>
   </body>
 </html>
