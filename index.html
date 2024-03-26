@@ -28,7 +28,7 @@
         </ul>
       </nav>
       <div class="audio">
-        <audio src="./assets/audios/lofi.mp3" autoplay loop controls></audio>
+        <audio src="./assets/audios/lofi.mp3" loop controls></audio>
         <p class="credits">
           Vídeo obtido através do site
           <a
@@ -106,7 +106,87 @@
           Faça seu cadastro para receber em primeira mão nossas promoções e
           acumule pontos para usar em suas compras.
         </p>
-        <p>Aqui será incluido o formulário da atividade 3</p>
+        <form>
+          <fieldset name="Dados pessoais">
+            <div class="threeColumns">
+              <input type="text" placeholder="Informe seu nome" />
+              <input type="text" placeholder="Informe seu sobrenome" />
+              <div>
+                <label for="birthday">Nascimento: </label>
+                <input type="date" id="birthday" />
+              </div>
+            </div>
+            <div class="threeColumns">
+              <input type="number" placeholder="Digite seu CPF" />
+              <input type="email" placeholder="Digite seu melhor e-mail" />
+              <input
+                type="text"
+                placeholder="Digite seu telefone (DDD) 00000-0000"
+              />
+            </div>
+            <div class="threeColumns">
+              <input type="text" placeholder="Digite o estado" />
+              <input type="text" placeholder="Digite a cidade" />
+              <input type="number" placeholder="Digite o cep" />
+            </div>
+            <div class="twoColumns">
+              <input type="text" placeholder="Digite seu endereço" />
+              <input type="text" placeholder="Complemento" />
+            </div>
+            <div class="oneColumn">
+              <p>Gênero:</p>
+              <label for="woman">Feminino</label>
+              <input type="radio" name="gender" id="woman" value="woman" />
+              <label for="Men">Masculino</label>
+              <input type="radio" name="gender" id="men" value="men" />
+            </div>
+            <div class="oneColumn">
+              <p>Aceita receber novidades e promoções?</p>
+              <label for="yes">Sim</label>
+              <input type="radio" name="acceptNews" id="yes" value="yes" />
+              <label for="no">Não</label>
+              <input type="radio" name="acceptNews" id="no" value="no" />
+            </div>
+            <div class="oneColumn">
+              <p>Onde gostaria de receber as notificações?</p>
+              <label for="email">E-mail</label>
+              <input
+                type="checkbox"
+                name="notifications"
+                id="email"
+                value="email"
+              />
+              <label for="sms">SMS</label>
+              <input
+                type="checkbox"
+                name="notifications"
+                id="sms"
+                value="sms"
+              />
+              <label for="whatsapp">Whatsapp</label>
+              <input
+                type="checkbox"
+                name="notifications"
+                id="whatsapp"
+                value="whatsapp"
+              />
+            </div>
+            <div class="oneColumn">
+              <label for="">Como conheceu a YU Coffee?</label>
+              <select id="howFoundUs">
+                <option value=""></option>
+                <option value="instagram">Instagram</option>
+                <option value="friends">Indicação de amigos</option>
+                <option value="inPerson">Pessoalmente - loja física</option>
+                <option value="others">Outros</option>
+              </select>
+            </div>
+            <div class="formButtons">
+              <button type="reset" class="formButton">Limpar</button>
+              <button type="submit" class="formButton">Finalizar</button>
+            </div>
+          </fieldset>
+        </form>
       </div>
     </section>
     <section id="stores">
